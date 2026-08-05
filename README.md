@@ -1,51 +1,51 @@
 # 🛸 PROJECT UNIVERSE: HUNT-TCU v1.2 IP CORE & FIELD EQUATION
-## Ecosistema Digital Unificado: Del Manuscrito al Silicio
+## Unified Digital Ecosystem: From Manuscript to Silicon
 
-¡Bienvenido al repositorio oficial de **PROJECT UNIVERSE**, el entorno definitivo de unificación física y codiseño de hardware/software basado en la Teoría del Todo de Richard Hunt! Este ecosistema integra la abstracción de la geometría algebraica con la potencia de cálculo del chip **IP Core HUNT-TCU v1.2** (*Hunt Tensor Computation Unit*) para modelar, simular y visualizar la Ecuación de Campo Unificado a través de un pipeline secuencial de bloques (Capítulos I al VIII).
-
----
-
-## 🚀 Características Clave del Proyecto
-
-*   **Unificación Cuántica-Gravitacional en Hardware:** Implementación del **Principio de Equivalencia Ondulatoria (PEUO)** directamente en lógica digital y arquitecturas de silicio.
-*   **IP Core HUNT-TCU v1.2 Certificado:** Procesador tensorial diseñado en Verilog RTL y testeado con éxito online en entornos de emulación de hardware avanzados (**AMLS**).
-*   **Cancelación de Infinitos:** Arquitectura lógica que introduce el término de restitución elástica fundamental para evitar desbordamientos y divisiones por cero en el cálculo de singularidades cósmicas.
-*   **Doble Modelo de Computación:** Soporte nativo para el **Modelo A** (resolución espectral armónica basada en la línea crítica $\sigma = 1/2$ de Riemann) y el **Modelo B** (mecánica de medios continuos e hiperelasticidad del vacío).
-*   **Pipeline Visual Secuencial:** Interfaz web interactiva (HTML5/C++/Python) dividida en bloques modulares que representan los capítulos del manuscrito.
+Welcome to the official repository of **PROJECT UNIVERSE**, the definitive hardware-software co-design ecosystem based on Richard Hunt's Unified Field Theory (Theory of Everything). This environment seamlessly integrates the abstraction of Algebraic Geometry with the raw processing power of the **HUNT-TCU v1.2 IP Core** (*Hunt Tensor Computation Unit*) to model, simulate, and visualize the Unified Field Equation through a sequential pipeline of operational blocks (covering Chapters I to VIII).
 
 ---
 
-## 📂 Arquitectura y Pipeline de Bloques (Archivos Secuenciales)
+## 🚀 Key Project Features
 
-Para facilitar la auditoría científica y la visualización, el proyecto se ejecuta de forma secuencial a través de los siguientes archivos que puedes compilar o visualizar directamente:
-
-1.  **`index.html` (Menú Maestro y Portal de Acceso):** Panel de control interactivo que conecta la documentación literaria del libro con los módulos de cómputo.
-2.  **`index01.html` (Bloque I - Geometría Algebraica):** Simulación matemática en Python del espacio de fases y la variedad algebraica de la malla elástica continua (Capítulos I - III).
-3.  **`index02.html` (Bloque II - Coprocesador RTL HUNT-TCU v1.2):** Código fuente oficial en Verilog RTL del microchip. Muestra el comportamiento de las compuertas lógicas estabilizando el Operador de Coherencia $\mathcal{H}$ (Capítulos IV - V).
-4.  **`index03.html` (Bloque III - Motor de Simulación 3D):** Renderizado en tiempo real y lógica matemática de alto rendimiento optimizada para simular el repliegue del espaciotiempo y la Misión Alfa interestelar (Capítulos VI - VIII).
-
----
-
-## 🛠️ Especificaciones Técnicas del Chip HUNT-TCU v1.2
-
-El coprocesador está diseñado para actuar como un acelerador de hardware acoplado a sistemas cuánticos o tradicionales. Sus especificaciones de fábrica son:
-*   **Entradas de Datos:** Matrices tensoriales de 64 bits para el Tensor de Elasticidad Intrínseca ($\mathbf{\Xi}$) y la Función de Onda ($\psi$).
-*   **Constante Base de Calibración:** Resonancia calibrada a la rigidez del vacío de Hunt ($\mu_0 \approx 4.63 \times 10^{113} \text{ J/m}^3$).
-*   **Operador de Sintonización:** Sincronización del Operador de Hunt ($\mathcal{H} = 1$) para activar la deformación métrica segura.
-*   **Entorno de Testeo:** Validado online en **AMLS** para garantizar la estabilidad de la sincronización de fases a frecuencias ultra-altas.
+*   **Hardware-Level Quantum-Gravitational Unification:** Production-ready implementation of the **Wave Equivalency Principle (WEP)** directly mapped onto digital logic and silicon architectures.
+*   **Certified HUNT-TCU v1.2 IP Core:** High-throughput tensor processor designed in Verilog RTL and successfully verified through online hardware emulation environments (**AMLS**).
+*   **Singularity Cancellation Architecture:** Custom hardware logic introducing a fundamental elastic restitution term to eliminate buffer overflows and division-by-zero errors during cosmic singularity computations.
+*   **Dual Computation Models:** Native support for **Model A** (harmonic spectral resolution based on Riemann's critical line $\sigma = 1/2$) and **Model B** (relativistic continuum mechanics and vacuum hyperelasticity).
+*   **Sequential Visual Pipeline:** Interactive web interface (HTML5/C++/Python) divided into modular blocks matching the manuscript's chapters.
 
 ---
 
-## ⚙️ Cómo Ejecutar este Repositorio
+## 📂 Architecture and Pipeline Blocks (Sequential Files)
 
-1.  **Clona el repositorio en tu máquina local:**
+To streamline scientific auditing and visualization, the project executes sequentially through the following source files, which can be compiled or reviewed directly in your environment:
+
+1.  **`index.html` (Master Menu & Control Portal):** An interactive dashboard connecting the literary documentation of the book with the underlying computing modules.
+2.  **`index01.html` (Block I - Algebraic Geometry):** Python-powered mathematical simulation of the phase space and the affine variety of Hunt’s continuous elastic mesh (Chapters I - III).
+3.  **`index02.html` (Block II - HUNT-TCU v1.2 RTL Coprocessor):** Official Verilog RTL source code of the microchip. Demonstrates how logic gates stabilize the Hunt Coherence Operator $\mathcal{H}$ to achieve safe metric distortion (Chapters IV - V).
+4.  **`index03.html` (Block III - 3D Simulation Engine):** High-performance real-time rendering engine optimized in C++ to compute spacetime warping and the Alpha Mission interstellar transit (Chapters VI - VIII).
+
+---
+
+## 🛠️ HUNT-TCU v1.2 Hardware Specifications
+
+The coprocessor acts as a high-speed hardware accelerator coupled to quantum or classical host systems. Factory specifications include:
+*   **Data Inputs:** 64-bit tensor buses for the Intrinsic Elasticity Tensor ($\mathbf{\Xi}$) and the Quantum Wavefunction ($\psi$).
+*   **Base Calibration Constant:** Hardcoded resonance tuned to Hunt's Vacuum Stiffness ($\mu_0 \approx 4.63 \times 10^{113} \text{ J/m}^3$).
+*   **Tuning Operator:** Synchronized Hunt Operator ($\mathcal{H} = 1$) to engage localized space contraction without causal violation.
+*   **Testing Environment:** Verified online via **AMLS** to guarantee phase synchronization stability at ultra-high frequencies.
+
+---
+
+## ⚙️ Deployment & Execution
+
+1.  **Clone this repository to your local machine:**
     ```bash
     git clone https://github.com
     ```
-2.  **Visualiza las interfaces web:** Abre el archivo `index.html` en cualquier navegador moderno para iniciar el simulador por bloques.
-3.  **Compila la lógica de silicio:** Importa el módulo Verilog de `index02.html` en tu software de síntesis preferido (Vivado, Quartus o simuladores online) para verificar las formas de onda anti-singularidades.
+2.  **Launch Visual Interfaces:** Open `index.html` in any modern web browser to spin up the modular pipeline simulator.
+3.  **Synthesize Silicon Logic:** Import the Verilog module from `index02.html` into your hardware synthesis suite (Xilinx Vivado, Intel Quartus, or online EDA tools) to verify the anti-singularity waveforms.
 
 ---
 
-## 📜 Licencia y Propiedad Intelectual
-Este proyecto está protegido bajo propiedad industrial e intelectual. El uso del IP Core HUNT-TCU v1.2 y sus modelos matemáticos asociados está autorizado exclusivamente para fines de investigación científica, desarrollo aeroespacial y validación de la Teoría del Todo de Richard Hunt.
+## 📜 Intellectual Property & Licensing
+This project is protected under international industrial and intellectual property laws. The utilization of the HUNT-TCU v1.2 IP Core and its associated mathematical frameworks is strictly authorized for scientific research, aerospace development, and validation of Richard Hunt's Unified Field Theory.
