@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE HUNT EQUATION: VOL I (CHAP 1-4)</title>
+  <style>
+    html, body { background-color: #010401; color: #ffffff; font-family: 'Courier New', monospace; margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; position: relative; }
+    .fullscreen-bg-grid { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; perspective: 350px; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+    .mesh-3d-background { width: 150vw; height: 150vh; position: relative; transform-style: preserve-3d; animation: backgroundRotate 25s infinite linear; display: flex; justify-content: center; align-items: center; }
+    .bg-cylinder-mesh { position: absolute; width: 520px; height: 650px; border-left: 3px dashed rgba(0, 255, 0, 0.4); border-right: 3px dashed rgba(0, 255, 0, 0.4); border-top: 5px solid rgba(0, 255, 0, 0.2); border-bottom: 5px solid rgba(0, 255, 0, 0.2); border-radius: 50% / 40px; box-shadow: 0 0 50px rgba(0,255,0,0.15); transform: rotateX(75deg); }
+    @keyframes backgroundRotate { 0% { transform: rotateY(0deg) rotateX(15deg); } 100% { transform: rotateY(360deg) rotateX(15deg); } }
+    .hunt-card { background: rgba(3, 10, 3, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); width: 95%; max-width: 740px; padding: 15px 25px; border-radius: 0 0 12px 12px; border: 1px solid #00ff00; border-top: none; box-shadow: 0 8px 25px rgba(0,255,0,0.25); box-sizing: border-box; z-index: 10; position: relative; }
+    .header-portal { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 255, 0, 0.4); padding-bottom: 8px; margin-bottom: 10px; }
+    .main-title { margin: 0; font-size: 1.1em; letter-spacing: 2px; font-weight: bold; color: #00ff00; text-shadow: 0 0 8px #00ff00; }
+    .hardware-tag { font-size: 0.7em; color: #00ff00; background: rgba(0,255,0,0.15); padding: 2px 6px; border-radius: 4px; border: 1px solid #00ff00; font-weight: bold; }
+    .flags-container { display: flex; gap: 8px; }
+    .css-flag { width: 32px; height: 20px; border-radius: 2px; }
+    .flag-uk { background: linear-gradient(45deg, transparent 46%, #cc0000 46%, #cc0000 54%, transparent 54%), linear-gradient(-45deg, transparent 46%, #cc0000 46%, #cc0000 54%, transparent 54%), linear-gradient(45deg, transparent 43%, #ffffff 43%, #ffffff 57%, transparent 57%), linear-gradient(-45deg, transparent 43%, #ffffff 43%, #ffffff 57%, transparent 57%), linear-gradient(to right, transparent 44%, #cc0000 44%, #cc0000 56%, transparent 56%), linear-gradient(to bottom, transparent 41%, #cc0000 41%, #cc0000 59%, transparent 59%), linear-gradient(to right, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%), linear-gradient(to bottom, transparent 35%, #ffffff 35%, #ffffff 65%, transparent 65%), #00247d; }
+    .flag-es { background: linear-gradient(to bottom, #cc0000 25%, #ffcc00 25%, #ffcc00 75%, #cc0000 75%); }
+    .nav-bar { display: flex; justify-content: space-between; gap: 4px; margin-bottom: 15px; }
+    .nav-btn { flex: 1; padding: 6px 0; font-size: 0.65em; background: #000; color: #00ff00; border: 1px solid #00ff00; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    .nav-btn:hover, .nav-btn.active { background: #00ff00; color: #000; box-shadow: 0 0 10px #00ff00; }
+    .display-box { width: 100%; background: rgba(0, 0, 0, 0.85); border: 1px solid #00ff00; border-radius: 6px; padding: 15px; height: 50vh; overflow-y: auto; box-sizing: border-box; }
+    .title-cap { margin: 0 0 5px 0; font-size: 1.1em; color: #00ff00; text-transform: uppercase; }
+    .desc-text { font-size: 0.85em; color: #dddddd; line-height: 1.4; text-align: justify; margin: 5px 0; }
+    .equation-badge { font-size: 0.75em; text-align: center; color: #00ff00; border-top: 1px solid rgba(0,255,0,0.3); padding-top: 8px; margin-top: 15px; font-weight: bold; }
+    .footer-text { text-align: center; font-size: 0.65em; color: #00aa00; border-top: 1px solid rgba(0,255,0,0.2); padding-top: 5px; font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="fullscreen-bg-grid"><div class="mesh-3d-background"><div class="bg-cylinder-mesh"></div></div></div>
+  <div class="hunt-card">
+    <div class="header-portal">
+      <h1 class="main-title">THE HUNT EQUATION // NOVEL ARCHIVE: VOL I</h1>
+      <div class="hardware-tag">HOST: HUNT-TCU v 1.2</div>
+      <div class="flags-container"><div class="css-flag flag-uk"></div><div class="css-flag flag-es"></div></div>
+    </div>
+    <div class="nav-bar"><button class="nav-btn active" onclick="loadCap(1)">CHAP I</button><button class="nav-btn" onclick="loadCap(2)">CHAP II</button><button class="nav-btn" onclick="loadCap(3)">CHAP III</button><button class="nav-btn" onclick="loadCap(4)">CHAP IV</button></div>
+    <div class="display-box" id="display-target"></div>
+    <div class="footer-text">LOCAL STORAGE TIER 01: SYSTEM NOMINAL</div>
+  </div>
+  <script>
+    const DB_V1 = {
+      1: { title: "Chapter I: The Fracture of the Manifold", eq: "G_μν + Λg_μν = (8πG/c⁴) * T_μν", en: "The standard metric breaks down under extreme gravitational stress. The traditional field geometry crashes, causing two disjoint space-time hyperplanes to tear reality asunder.", es: "La métrica tradicional se quiebra bajo un estrés gravitatorio extremo. La geometría de campo tradicional colapsa, haciendo que dos hiperplanos espaciotemporales disjuntos desgarren la realidad." },
+      2: { title: "Chapter II: The Hunt Continuum (PEUO)", eq: "G_μν + Λg_μν = (8πG/c⁴) * [ T_μν - ∂²Ξ/∂t² ]", en: "The mathematical revelation. By incorporating the intrinsic elasticity tensor (Ξ), the infinite divergent gap completely heals. The massive continuous grid spinning behind models a fully connected space-time framework.", es: "La revelación matemática. Al incorporar el tensor de elasticidad intrínseca (Ξ), la brecha divergente infinita sana por completo. La enorme red continua que gira detrás modela un marco espaciotemporal totalmente conectado." },
+      3: { title: "Chapter III: The Quantum Synchronization Operator (#)", eq: "# [ ∇ψ∇ψ* ] ──► # = 1", en: "The fundamental tuning switch. When the operator # converges strictly to 1, chaotic quantum probability fluctuations dissolve, lock phase, and instantly stabilize into an unbroken harmonic geometry over the Hilbert Space.", es: "El interruptor fundamental de sintonía. Cuando el operador # converge estrictamente a 1, las fluctuaciones caóticas de probabilidad cuántica se disuelven, bloquean su fase y se estabilizan al instante en una geometría armónica sobre el Espacio de Hilbert." },
+      4: { title: "Chapter IV: Metric Warp Supposition", eq: "f(x) = -∂²Ξ / ∂t²", en: "Space-time metric propulsion without physical acceleration. The front fold of the ship compresses the canvas width by changing the tensional rate, while the back fold releases pressure, moving the bubble smoothly across the stars.", es: "Propulsión métrica espaciotemporal sin aceleración física. El pliegue delantero de la nave comprime el ancho del lienzo modificando la tasa tensional, mientras que el trasero libera presión, desplazando la burbuja suavemente a través de las estrellas." }
+    };
+    function loadCap(id) {
+      const rec = DB_V1[id];
+      document.getElementById('display-target').innerHTML = `<h3 class="title-cap">${rec.title}</h3><p class="desc-text">🇬🇧 ${rec.en}</p><p class="desc-text">🇪🇸 ${rec.es}</p><div class="equation-badge">BASE FIELD EQUATION: ${rec.eq}</div>`;
+      document.querySelectorAll('.nav-btn').forEach((b, i) => { if(i===(id-1)) b.classList.add('active'); else b.classList.remove('active'); });
+    }
+    document.addEventListener("DOMContentLoaded", () => loadCap(1));
+  </script>
+</body>
+</html>
