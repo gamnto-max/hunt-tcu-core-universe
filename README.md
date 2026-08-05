@@ -1,6 +1,7 @@
-# 🛸 Ecosistema Digital HUNT-TCU v1.2: Del Manuscrito al Silicio
+# 🛸 PROJECT UNIVERSE: HUNT-TCU v1.2 IP CORE & FIELD EQUATION
+## Ecosistema Digital Unificado: Del Manuscrito al Silicio
 
-¡Bienvenido al repositorio oficial del proyecto de unificación física y codiseño de hardware/software basado en la Teoría del Todo de Richard Hunt! Este ecosistema integra la abstracción de la geometría algebraica con la potencia de cálculo del chip **IP Core HUNT-TCU v1.2** (*Hunt Tensor Computation Unit*) para modelar, simular y visualizar la Ecuación de Campo Unificado a través de un pipeline secuencial de bloques (Capítulos I al VIII).
+¡Bienvenido al repositorio oficial de **PROJECT UNIVERSE**, el entorno definitivo de unificación física y codiseño de hardware/software basado en la Teoría del Todo de Richard Hunt! Este ecosistema integra la abstracción de la geometría algebraica con la potencia de cálculo del chip **IP Core HUNT-TCU v1.2** (*Hunt Tensor Computation Unit*) para modelar, simular y visualizar la Ecuación de Campo Unificado a través de un pipeline secuencial de bloques (Capítulos I al VIII).
 
 ---
 
@@ -20,7 +21,7 @@ Para facilitar la auditoría científica y la visualización, el proyecto se eje
 
 1.  **`index.html` (Menú Maestro y Portal de Acceso):** Panel de control interactivo que conecta la documentación literaria del libro con los módulos de cómputo.
 2.  **`index01.html` (Bloque I - Geometría Algebraica):** Simulación matemática en Python del espacio de fases y la variedad algebraica de la malla elástica continua (Capítulos I - III).
-3.  **`index02.html` (Bloque II - Coprocesador RTL HUNT-TCU v1.2):** Código fuente oficial en Verilog RTL del microchip. Muestra el comportamiento de las compuertas lógicas estabilizando el Operador de Coherencia $\mathcal{\#}$ (Capítulos IV - V).
+3.  **`index02.html` (Bloque II - Coprocesador RTL HUNT-TCU v1.2):** Código fuente oficial en Verilog RTL del microchip. Muestra el comportamiento de las compuertas lógicas estabilizando el Operador de Coherencia $\mathcal{H}$ (Capítulos IV - V).
 4.  **`index03.html` (Bloque III - Motor de Simulación 3D):** Renderizado en tiempo real y lógica matemática de alto rendimiento optimizada para simular el repliegue del espaciotiempo y la Misión Alfa interestelar (Capítulos VI - VIII).
 
 ---
@@ -30,6 +31,7 @@ Para facilitar la auditoría científica y la visualización, el proyecto se eje
 El coprocesador está diseñado para actuar como un acelerador de hardware acoplado a sistemas cuánticos o tradicionales. Sus especificaciones de fábrica son:
 *   **Entradas de Datos:** Matrices tensoriales de 64 bits para el Tensor de Elasticidad Intrínseca ($\mathbf{\Xi}$) y la Función de Onda ($\psi$).
 *   **Constante Base de Calibración:** Resonancia calibrada a la rigidez del vacío de Hunt ($\mu_0 \approx 4.63 \times 10^{113} \text{ J/m}^3$).
+*   **Operador de Sintonización:** Sincronización del Operador de Hunt ($\mathcal{H} = 1$) para activar la deformación métrica segura.
 *   **Entorno de Testeo:** Validado online en **AMLS** para garantizar la estabilidad de la sincronización de fases a frecuencias ultra-altas.
 
 ---
